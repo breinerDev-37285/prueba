@@ -50,20 +50,8 @@
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
     "baseUrl": "./src" /* Base directory to resolve non-absolute module names. */,
     "paths": {
-      "@redux/*": ["app/redux/*"],
-      "@helpers/*": ["app/helpers/*"],
-      "@modules/*": ["app/modules/*"],
-      "@routes/*": ["app/routes/*"],
-      "@utils/*": ["app/utils/*"],
-      "@assets/*": ["app/assets/*"],
-      "@context/*": ["app/context/*"],
-      "@landing/*": ["app/modules/landing/*"],
-      "@admin/*": ["app/modules/admin/*"],
-      "@seller/*": ["app/modules/seller/*"],
-      "@client/*": ["app/modules/client/*"],
-      "@chat/*": ["app/modules/chat/*"],
-      "@shopping/*": ["app/modules/shopping/*"],
-      "@api/*": ["app/api/*"]
+      "@components/*": ["app/components/*"],
+      "@interfaces/*": ["app/interfaces/*"]
     } /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */,
     // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                             /* List of folders to include type definitions from. */
