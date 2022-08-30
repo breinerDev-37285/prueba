@@ -29,14 +29,14 @@ const App = () => (
             {
               title: '3 Gigas',
               items: {
-                icon: ['fa-solid fa-user', 'fa-solid fa-user'],
+                icon: ['fa-brands fa-facebook', 'fa-brands fa-instagram'],
                 text: 'Facebook e Instagram',
               },
             },
             {
               title: '+8 Gigas',
               items: {
-                icon: ['fa-solid fa-user'],
+                icon: ['fa-solid fa-mobile'],
                 text: 'Para que navegues cada mes',
               },
             },
@@ -50,7 +50,7 @@ const App = () => (
             {
               title: '+15 Gigas',
               items: {
-                icon: ['fa-solid fa-user'],
+                icon: ['fa-solid fa-gift'],
                 text: 'De regalo x1 mes por cambiarte a Movistar',
               },
             },
@@ -81,26 +81,14 @@ const App = () => (
           items={[
             {
               items: {
-                icon: ['fa-solid fa-user', 'fa-solid fa-user'],
-                text: 'Facebook e Instagram',
+                icon: ['fa-solid fa-user'],
+                text: '+2GB Para navegar',
               },
             },
             {
               items: {
                 icon: ['fa-solid fa-user'],
-                text: 'Para que navegues cada mes',
-              },
-            },
-            {
-              items: {
-                icon: ['fa-solid fa-user'],
-                text: 'Para Netflix + Youtube',
-              },
-            },
-            {
-              items: {
-                icon: ['fa-solid fa-user'],
-                text: 'De regalo x1 mes por cambiarte a Movistar',
+                text: '+1GB de Facebook, Facebook messenger e Instagram',
               },
             },
           ]}
