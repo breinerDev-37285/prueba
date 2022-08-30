@@ -1,37 +1,38 @@
 import { IDescription } from '@interfaces/card'
 
 const DescriptionCard = ({
-  listDescription,
+  items,
+  totalPlan,
   enlace,
-  title,
-  description,
+  enlaceText,
+  customStyle,
 }: IDescription) => (
-  <div className="wrapper_desc_container">
-    {listDescription && (
-      <div className="wrapper_list_desc">
-        {listDescription.map(({ icon, desc }, i) => (
-          <div key={i} className="wrapper_desc">
-            {icon && <i className={`${icon} icon`} />}
-            <span className="desc">{desc}</span>
+  <div className={`wrapper_desc_container ${customStyle}`}>
+    <div className="wrapper_items">
+      {items.map(({ title, items }, i) => (
+        <div className="wrapper_item" key={i}>
+          <span className="title_item">{title}</span>
+          <div className="wrapper_desc">
+            <div className="wrapper_icons">
+              {items.icon.map((icon, j) => (
+                <i key={j} className={`${icon} icon`} />
+              ))}
+            </div>
+            <span className="wrapper_text">{items.text}</span>
           </div>
-        ))}
-      </div>
-    )}
-    {enlace && (
-      <div className="wrapper_enlace">
-        <a className="enlace" href={enlace.enlace}>
-          {enlace.text}
-        </a>
-        <i className="fa-solid fa-chevron-right icon_chevrom" />
-      </div>
-    )}
+        </div>
+      ))}
 
-    {title && description && (
-      <div className="wrapper_desc_title_desc">
-        <span className="title">{title}</span>
-        <span className="desc">{description}</span>
+      <hr className="hr" />
+
+      <div className="wrapper_total_plan">
+        <span className="text_total">{totalPlan?.total}</span>
+        <span>{totalPlan?.text}</span>
       </div>
-    )}
+    </div>
+    <span className="enlace">
+      <a href={enlace}>{enlaceText}</a>
+    </span>
   </div>
 )
 

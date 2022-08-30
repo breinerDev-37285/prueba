@@ -1,25 +1,38 @@
-export interface listDesc {
-  icon: string
-  desc: string
-}
-
-export interface IEnlace {
-  enlace: string
+export interface Item {
+  icon: string[]
   text: string
 }
-
-export interface IDescription {
+export interface IItems {
   title?: string
-  description?: string
-  listDescription?: listDesc[]
-  enlace?: IEnlace
+  items: Item
+}
+
+export interface ITotalPlan {
+  total: string
+  text: string
+}
+export interface IDescription {
+  items: IItems[]
+  enlace: string
+  enlaceText: string
+  totalPlan?: ITotalPlan
+  customStyle?: string
 }
 
 export interface ITitleBanner {
+  titleBanner: string
   title?: string
-  subtitle?: string
-  description?: string
-  img?: string
+  desc?: string
+  customClassStyleHeader?: string
+  customClassStyleBanner?: string
+  children?: React.ReactNode
+}
+
+export interface IPlanCard {
+  plan: string
+  planDesc?: string
+  precioFinal?: number
+  precioSinIva?: number
 }
 
 export interface IButton {

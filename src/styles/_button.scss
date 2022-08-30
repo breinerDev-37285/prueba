@@ -1,0 +1,16 @@
+.wrapper_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0;
+  .btn {
+    width: 80%;
+    padding: 13px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: $color-primary;
+    color: #fff;
+    font-size: 16px;
+  }
+}

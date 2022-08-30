@@ -1,0 +1,15 @@
+@import './base';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins&family=Raleway:wght@300&display=swap');
+
+$color-primary: #019df4;
+$color-secondary: #e5377f;
+$color-tertiary: #bde4a4;
+$color-aux: #dbf1fe;
+
+$font-poppins: 'Poppins', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+
+body {
+  font-family: $font-poppins;
+}
