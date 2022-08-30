@@ -1,5 +1,3 @@
-import { ReactNode } from 'react'
-
 export interface listDesc {
   icon: string
   desc: string
@@ -32,11 +30,4 @@ export interface IButton {
 
 export interface IFooterCard {
   text?: string
-}
-
-export interface ICard {
-  Description?: ReactNode
-  Button?: ReactNode
-  BannerTitle?: ReactNode
-  Footer?: ReactNode
 }

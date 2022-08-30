@@ -1,12 +1,7 @@
-import { ICard } from 'app/interfaces/card'
+interface IProps {
+  children: React.ReactNode
+}
 
-const Card = ({ BannerTitle, Description, Button, Footer }: ICard) => (
-  <div className="card">
-    {BannerTitle && BannerTitle}
-    {Description && Description}
-    {Button && Button}
-    {Footer && Footer}
-  </div>
-)
+const Card = ({ children }: IProps) => <div className="card">{children}</div>
 
 export default Card
